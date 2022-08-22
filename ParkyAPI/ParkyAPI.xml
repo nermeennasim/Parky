@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParkyAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ParkyAPI.Controllers.NationalParksController.GetAllNationalParks">
+            <summary>
+            Get list of all National Parks.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.NationalParksController.GetNationalParks(System.Int32)">
+            <summary>
+            Get individual National Park
+            </summary>
+            <param name="NationalParkId">Id of the National Park</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.NationalParksController.CreateNationalPark(ParkyAPI.Models.Dtos.NationalParkDtos)">
+            <summary>
+            Create National Park inside Database .
+            </summary>
+            <param name="nationalParkDtos">it takes National Park Object</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.NationalParksController.UpdateNationalPark(System.Int32,ParkyAPI.Models.Dtos.NationalParkDtos)">
+            <summary>
+            Update National park , inside data base using NationalParkId as ID, and nationalParkDtos
+            </summary>
+            <param name="NationalParkId">Id of National Park</param>
+            <param name="nationalParkDtos">Object of National Park</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.NationalParksController.DeleteNationalPark(System.Int32)">
+            <summary>
+            Delete a single National park Entry inside database.
+            </summary>
+            <param name="NationalParkId">Id of National Park </param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.NationalParksV2Controller.GetNationalParks">
+            <summary>
+            Get list of all National Parks.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.GetTrails">
+            <summary>
+            Get list of all Trails.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.GetTrail(System.Int32)">
+            <summary>
+            Get individual Trail
+            </summary>
+            <param name="trailId">Id of the Trail</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.GetTrailInNationalPark(System.Int32)">
+            <summary>
+            Get List of Trails with given NationalPark Id
+            </summary>
+            <param name="nationalParkId">Id of the Trail</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.CreateTrail(ParkyAPI.Models.Dtos.TrailInsertDto)">
+            <summary>
+            Create Trail inside Database .
+            </summary>
+            <param >it takes Trail Object</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.UpdateTrail(System.Int32,ParkyAPI.Models.Dtos.TrailUpdateDto)">
+            <summary>
+            Update Trail , inside data base using Trail Id as ID, and trailDtos
+            </summary>
+            <param name="trailId">Id of Trail</param>
+            <param name="trailDtos">Object of Trail Dto</param>
+            <returns></returns>
+        </member>
+        <member name="M:ParkyAPI.Controllers.TrailsController.DeleteTrail(System.Int32,ParkyAPI.Models.Dtos.TrailDto)">
+            <summary>
+            Delete a single Trail Entry inside database.
+            </summary>
+            <param name="trailId">Id of Trail </param>
+            <param name="trailDtos">Trail Object, Name and Distance are required</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
